@@ -14,16 +14,18 @@ const experiences = [
     position: "Cross-Platform Mobile Application Developer",
     period: "2023-06 to Present",
     description: [
-      "Lead Mobile App Developer, managing a team of 5 mobile developers and 2 designers.",
-      "Built scalable mobile apps using .NET MAUI, Blazor, and Android.",
-      "Delivered user-centric Android apps reaching 500K+ downloads.",
-      "Led full-cycle app development with real-time API integration.",
-      "Reduced crash rates by 30% via performance optimization.",
+      [
+        "Working as a Mobile Application Developer with a team of 4 mobile app developers and 2 designers.",
+        "Built scalable mobile applications using .NET MAUI, Blazor, and native Android.",
+        "Delivered user-focused Android apps with over 500K downloads.",
+        "Led end-to-end development with real-time API integrations.",
+        "Improved app stability by reducing crash rates by 30% through performance optimizations.",
+      ],
     ],
     teamDetails: {
-      mobileAppDevelopers: 5,
+      mobileAppDevelopers: 4,
       designers: 2,
-      otherRoles: 3,
+      otherRoles: 5,
     },
     color: "blue",
   },
@@ -32,21 +34,21 @@ const experiences = [
     position: "Android Application Developer",
     period: "2023-01 to 2023-06",
     description: [
-      "Android Developer working closely with 3 developers and 1 designer.",
+      "Android Developer working closely with 5 developers and 1 designer.",
       "Delivered custom solutions integrating advanced ServiceNow modules.",
       "Focused on performance optimization, third-party integrations, and security best practices.",
     ],
     teamDetails: {
-      mobileAppDevelopers: 3,
+      mobileAppDevelopers: 5,
       designers: 1,
-      otherRoles: 2,
+      otherRoles: 4,
     },
     color: "purple",
   },
   {
     company: "True Muslim App Studio",
     position: "Android Application Developer",
-    period: "2021-12 to 2023-07",
+    period: "2022-06 to 2023-01",
     description: [
       "Mobile App Developer, collaborated with 4 developers and 1 designer.",
       "Built religious apps serving 1M+ users with 4.7+ average ratings.",
@@ -55,7 +57,7 @@ const experiences = [
     teamDetails: {
       mobileAppDevelopers: 4,
       designers: 1,
-      otherRoles: 2,
+      otherRoles: 4,
     },
     color: "teal",
   },
@@ -170,13 +172,13 @@ export default function Experience() {
             >
               <Card
                 className={`w-full md:w-[calc(50%-40px)] border-none shadow-lg relative card-vibrant ${getNeonBorderClass(
-                  exp.color
+                  exp.color,
                 )}`}
               >
                 {/* Timeline dot */}
                 <div
                   className={`absolute top-8 w-5 h-5 rounded-full ${getGradientClass(
-                    exp.color
+                    exp.color,
                   )} border-4 border-black left-0 md:left-auto md:right-0 transform translate-x-[-50%] md:translate-x-[50%] shadow-lg`}
                 ></div>
 
@@ -184,7 +186,7 @@ export default function Experience() {
                   <div className="flex items-center mb-6">
                     <div
                       className={`w-12 h-12 rounded-full ${getGradientClass(
-                        exp.color
+                        exp.color,
                       )} flex items-center justify-center mr-4 shadow-lg`}
                     >
                       <Briefcase className="h-6 w-6 text-white" />
@@ -192,7 +194,7 @@ export default function Experience() {
                     <div>
                       <h3
                         className={`text-xl font-semibold text-white ${getGlowClass(
-                          exp.color
+                          exp.color,
                         )}`}
                       >
                         {exp.company}

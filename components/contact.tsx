@@ -12,6 +12,7 @@ import {
   Linkedin,
   Twitter,
   Instagram,
+  Facebook,
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -30,22 +31,27 @@ export default function Contact() {
     {
       name: "github",
       icon: <Github className="w-5 h-5 text-white" />,
-      url: "https://github.com/yourusername",
+      url: "https://github.com/Muhammadfarooq3310",
     },
     {
       name: "linkedin",
       icon: <Linkedin className="w-5 h-5 text-white" />,
-      url: "https://linkedin.com/in/yourprofile",
+      url: "https://www.linkedin.com/in/muhammad-umar-farooq-723216160/",
+    },
+    {
+      name: "facebook",
+      icon: <Facebook className="w-5 h-5 text-white" />,
+      url: "https://www.facebook.com/mrfarwq.974473",
     },
     {
       name: "twitter",
       icon: <Twitter className="w-5 h-5 text-white" />,
-      url: "https://twitter.com/yourusername",
+      url: "https://x.com/UmarFarooq22346?t=ywvhOSEGNJhACVkbZuUP5g&s=09",
     },
     {
       name: "instagram",
       icon: <Instagram className="w-5 h-5 text-white" />,
-      url: "https://instagram.com/yourusername",
+      url: "https://www.instagram.com/mumarfarooq123/",
     },
   ];
 
@@ -80,7 +86,6 @@ export default function Contact() {
           start: "top 80%",
         },
       });
-
       gsap.from(".form-element", {
         opacity: 0,
         y: 20,
@@ -155,6 +160,7 @@ export default function Contact() {
               </p>
 
               <div className="space-y-6">
+                {/* Email */}
                 <div className="flex items-start">
                   <div className="icon-wrapper mr-4">
                     <Mail className="h-5 w-5 text-white" />
@@ -163,10 +169,18 @@ export default function Contact() {
                     <h4 className="text-sm font-medium text-blue-300 mb-1">
                       Email
                     </h4>
-                    <p className="text-white">mumarfarooq.abc@gmail.com</p>
+                    <p className="text-white">
+                      <a
+                        href="mailto:mumar.farooq1@outlook.com"
+                        className="text-teal-400 hover:underline"
+                      >
+                        fmuhammadumar42@gmail.com
+                      </a>
+                    </p>
                   </div>
                 </div>
 
+                {/* Phone */}
                 <div className="flex items-start">
                   <div className="icon-wrapper mr-4">
                     <Phone className="h-5 w-5 text-white" />
@@ -175,10 +189,20 @@ export default function Contact() {
                     <h4 className="text-sm font-medium text-blue-300 mb-1">
                       Phone
                     </h4>
-                    <p className="text-white">+92 311 8562572</p>
+                    <p className="text-white">
+                      <a
+                        href="https://wa.me/923118562572"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-teal-400 hover:underline"
+                      >
+                        +92 311 8562572
+                      </a>
+                    </p>
                   </div>
                 </div>
 
+                {/* Location */}
                 <div className="flex items-start">
                   <div className="icon-wrapper mr-4">
                     <MapPin className="h-5 w-5 text-white" />

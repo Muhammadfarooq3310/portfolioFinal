@@ -62,11 +62,7 @@ export default function About() {
   }, []);
 
   return (
-    <section
-      id="about"
-      ref={sectionRef}
-      className="pt-28 sm:pt-32 pb-20 relative z-10"
-    >
+    <section id="about" ref={sectionRef} className="pb-20 relative z-10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="section-title text-3xl md:text-4xl font-bold text-center text-white mb-16">
           About <span className="gradient-text-purple">Me</span>
@@ -119,9 +115,10 @@ export default function About() {
           <div className="relative">
             <div className="aspect-square rounded-2xl overflow-hidden shadow-xl neon-border-purple">
               <Image
-                src="/placeholder.svg?height=600&width=600"
+                src="/portfolio.jpeg"
                 alt="Developer Profile"
                 width={600}
+                quality={95}
                 height={600}
                 className="object-cover"
               />

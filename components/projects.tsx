@@ -94,6 +94,8 @@ const projectsData = [
     ],
     image: "/dc.webp?height=400&width=600",
     tags: ["Android", "Clock", "Customizable", "User Preferences"],
+    playStoreUrl:
+      "https://play.google.com/store/apps/details?id=com.lockscreen.clockwidget.alarmclock.timeclock.digitalclock.analogclock.nightclock&hl=en_US",
   },
   {
     id: "ramadan-calendar",
@@ -106,7 +108,7 @@ const projectsData = [
     image: "/rc.webp?height=400&width=600",
     tags: ["Android", "Ramadan", "Prayer Times", "Azans", "Quran"],
     playStoreUrl:
-      "https://play.google.com/store/apps/details?id=com.example.ramadancalendar",
+      "https://play.google.com/store/apps/details?id=com.ramadan.calendar.timetable.islamicapp.prayertimes&hl=en",
   },
   {
     id: "translation-app",
@@ -118,6 +120,8 @@ const projectsData = [
     ],
     image: "/lc.webp?height=400&width=600",
     tags: ["Kotlin", "Android", "ML Kit", "Offline Translation"],
+    playStoreUrl:
+      "https://play.google.com/store/apps/details?id=com.translate.picturetranslator.languagetranslator.voicetranslate.texttranslator&hl=en",
   } /*
   {
     id: "fyp-parking-management",
@@ -195,6 +199,21 @@ export default function Projects() {
                       <Link href={`/project/${project.id}`}>
                         <ExternalLink className="h-4 w-4 mr-1" /> View Details
                       </Link>
+                    </Button>
+
+                    <Button
+                      size="sm"
+                      variant="default"
+                      className="btn-gradient"
+                      asChild
+                    >
+                      <a
+                        href={project.playStoreUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ExternalLink className="h-4 w-4 mr-1" /> PlayStore
+                      </a>
                     </Button>
                   </div>
                 </div>

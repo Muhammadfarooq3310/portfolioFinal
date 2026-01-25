@@ -3,7 +3,14 @@
 import { useEffect, useRef } from "react";
 import Link from "next/link";
 import { gsap } from "gsap";
-import { ArrowUp, Github, Linkedin, Twitter, Instagram } from "lucide-react";
+import {
+  ArrowUp,
+  Github,
+  Linkedin,
+  Twitter,
+  Instagram,
+  Facebook,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Footer() {
@@ -14,22 +21,27 @@ export default function Footer() {
     {
       name: "github",
       icon: <Github className="w-4 h-4 text-white" />,
-      url: "https://github.com/yourusername",
+      url: "https://github.com/Muhammadfarooq3310",
     },
     {
       name: "linkedin",
       icon: <Linkedin className="w-4 h-4 text-white" />,
-      url: "https://linkedin.com/in/yourprofile",
+      url: "https://www.linkedin.com/in/muhammad-umar-farooq-723216160/",
+    },
+    {
+      name: "facebook",
+      icon: <Facebook className="w-5 h-5 text-white" />,
+      url: "https://www.facebook.com/mrfarwq.974473",
     },
     {
       name: "twitter",
       icon: <Twitter className="w-4 h-4 text-white" />,
-      url: "https://twitter.com/yourusername",
+      url: "https://x.com/UmarFarooq22346?t=ywvhOSEGNJhACVkbZuUP5g&s=09",
     },
     {
       name: "instagram",
       icon: <Instagram className="w-4 h-4 text-white" />,
-      url: "https://instagram.com/yourusername",
+      url: "https://www.instagram.com/mumarfarooq123/",
     },
   ];
 
@@ -96,8 +108,21 @@ export default function Footer() {
               Contact
             </h3>
             <ul className="space-y-2 text-blue-200">
-              <li>mumarfarooq.abc@gmail.com</li>
-              <li>+92 311 8562572</li>
+              <li>
+                <a href="mailto:mumar.farooq1@outlook.com">
+                  mumar.farooq1@outlook.com
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://wa.me/923118562572"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  +92 311 8562572
+                </a>
+              </li>
               <li>Pakistan</li>
             </ul>
 

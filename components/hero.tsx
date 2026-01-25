@@ -5,9 +5,12 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Download } from "lucide-react";
 import { gsap } from "gsap";
 import Link from "next/link";
+import { useToast } from "@/components/ui/use-toast";
+import FluidBackground from "./fluid-background";
 
 export default function Hero() {
   const heroRef = useRef<HTMLDivElement>(null);
+  const { toast } = useToast();
 
   useEffect(() => {
     const ctx = gsap.context(() => {
